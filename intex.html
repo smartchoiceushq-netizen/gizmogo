@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizmogo | Turn Your Used Electronics into Instant Cash</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        
+        fbq('init', '990273477490788'); 
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=990273477490788&ev=PageView&noscript=1"/></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandPurple: '#5B21B6',
+                        brandPurpleDark: '#4C1D95',
+                        brandOrange: '#F97316',
+                        brandDark: '#0F172A',
+                        brandLight: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .tech-shadow {
+            box-shadow: 0 24px 48px -15px rgba(91, 33, 182, 0.22);
+        }
+        .btn-glow:hover {
+            box-shadow: 0 12px 28px -5px rgba(249, 115, 22, 0.48);
+        }
+        .card-hover {
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 32px -10px rgba(15, 23, 42, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-brandLight text-brandDark font-sans antialiased selection:bg-brandPurple selection:text-white">
+
+    <!-- 1. Dark Top Trust Bar -->
+    <div class="bg-brandDark text-slate-200 text-xs sm:text-sm py-2.5 px-4 text-center tracking-wide border-b border-slate-800">
+        <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-x-6 gap-y-1.5">
+            <span class="flex items-center gap-1.5 font-medium">
+                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Free Shipping on All Trades
+            </span>
+            <span class="hidden sm:inline text-slate-600">&bull;</span>
+            <span class="flex items-center gap-1.5 font-medium">
+                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                Fast Payments
+            </span>
+            <span class="hidden md:inline text-slate-600">&bull;</span>
+            <span class="hidden md:flex items-center gap-1.5 font-medium">
+                <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                100% Secure &amp; Confidential
+            </span>
+        </div>
+    </div>
+
+    <!-- 2. Sticky White Header -->
+    <header class="bg-white/95 backdrop-blur-md sticky top-0 z-40 border-b border-slate-200/90">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-18 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2.5 group">
+                <div class="w-10 h-10 rounded-xl bg-brandPurple text-white flex items-center justify-center font-extrabold text-xl shadow-md group-hover:bg-brandPurpleDark transition">
+                    G
+                </div>
+                <span class="font-extrabold text-xl sm:text-2xl tracking-tight text-brandDark">Gizmogo<span class="text-brandOrange">.</span></span>
+            </a>
+            <div>
+                <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold bg-purple-50 text-brandPurple border border-purple-200/70">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    US Trade-In Program Live
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. Hero Section -->
+    <section class="relative pt-10 pb-20 sm:pt-16 sm:pb-24 overflow-hidden bg-gradient-to-b from-white via-slate-50 to-slate-100/80">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                
+                <!-- Left Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200/70 text-brandOrange text-xs font-bold uppercase tracking-wider">
+                        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"/></svg>
+                        Instant Cash Evaluation
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-5xl lg:text-[52px] font-extrabold text-brandDark leading-[1.13] tracking-tight">
+                        Turn Your Used Electronics into <span class="text-brandPurple">Instant Cash</span> – Fast, Easy &amp; Secure
+                    </h1>
+                    
+                    <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl mx-auto lg:mx-0">
+                        Have an old iPhone, MacBook, gaming console, or tablet sitting unused? Lock in a top-dollar quote in seconds, ship with our prepaid label, and get paid fast.
+                    </p>
+
+                    <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <button onclick="redirectToMaxBounty()" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-brandOrange hover:bg-orange-600 text-white font-bold text-base sm:text-lg px-8 py-4 rounded-xl transition-all duration-200 btn-glow shadow-lg cursor-pointer">
+                            <span>Get My Instant Offer</span>
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                        </button>
+                    </div>
+
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-x-5 gap-y-2 text-xs text-slate-500 pt-1">
+                        <span class="flex items-center gap-1.5">
+                            <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                            Free Data Wipe Guarantee
+                        </span>
+                        <span class="flex items-center gap-1.5">
+                            <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                            $5 New User Bonus Eligible
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Right Purple Gradient Card + Interactive Quick-Quote Selector -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-3xl overflow-hidden tech-shadow bg-gradient-to-br from-brandPurple via-brandPurpleDark to-slate-900 p-1.5">
+                        <div class="bg-slate-900/40 backdrop-blur-xl rounded-[22px] p-6 sm:p-7 text-white space-y-5 border border-white/10">
+                            
+                            <div class="flex justify-between items-center">
+                                <span class="text-xs font-bold uppercase tracking-widest bg-white/10 px-3 py-1 rounded-full text-purple-100">Featured Trade-Ins</span>
+                                <span class="text-xs text-emerald-300 font-semibold flex items-center gap-1.5">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> High Payouts
+                                </span>
+                            </div>
+
+                            <!-- Featured Trade-In Categories -->
+                            <div class="space-y-3">
+                                <div onclick="selectDevice('Smartphones & iPhones', 'Up to $820')" class="cursor-pointer bg-white/10 hover:bg-white/15 transition p-3.5 rounded-xl flex items-center justify-between border border-white/10">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-9 h-9 rounded-lg bg-purple-500/30 flex items-center justify-center text-purple-200">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                                        </div>
+                                        <div>
+                                            <p class="font-bold text-sm">Smartphones &amp; iPhones</p>
+                                            <p class="text-[11px] text-purple-200/80">iPhone 12–16, Galaxy S Series</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs bg-brandOrange text-white font-bold px-2.5 py-1 rounded-lg shadow-xs">High Value</span>
+                                </div>
+
+                                <div onclick="selectDevice('MacBooks & Laptops', 'Up to $1,450')" class="cursor-pointer bg-white/10 hover:bg-white/15 transition p-3.5 rounded-xl flex items-center justify-between border border-white/10">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-9 h-9 rounded-lg bg-purple-500/30 flex items-center justify-center text-purple-200">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                                        </div>
+                                        <div>
+                                            <p class="font-bold text-sm">MacBooks &amp; Laptops</p>
+                                            <p class="text-[11px] text-purple-200/80">MacBook Pro/Air, Dell, Surface</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 font-bold px-2.5 py-1 rounded-lg">Instant Quote</span>
+                                </div>
+
+                                <div onclick="selectDevice('Headphones & Gear', 'Up to $380')" class="cursor-pointer bg-white/10 hover:bg-white/15 transition p-3.5 rounded-xl flex items-center justify-between border border-white/10">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-9 h-9 rounded-lg bg-purple-500/30 flex items-center justify-center text-purple-200">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"/></svg>
+                                        </div>
+                                        <div>
+                                            <p class="font-bold text-sm">Headphones &amp; Gear</p>
+                                            <p class="text-[11px] text-purple-200/80">AirPods Max, Consoles, iPads</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs bg-white/15 text-white font-bold px-2.5 py-1 rounded-lg">Fast Payout</span>
+                                </div>
+                            </div>
+
+                            <!-- Interactive Quick-Quote Device Selector Preview -->
+                            <div class="bg-brandDark/70 rounded-2xl p-4 border border-white/10 space-y-3">
+                                <div class="flex items-center justify-between text-xs">
+                                    <span class="text-slate-300 font-medium">Quick Payout Estimator:</span>
+                                    <span id="estAmount" class="text-emerald-400 font-extrabold text-sm">Up to $820</span>
+                                </div>
+                                <select id="deviceSelector" onchange="updateEstimate()" class="w-full bg-slate-800 text-white text-xs sm:text-sm font-medium rounded-xl px-3.5 py-2.5 border border-slate-700 focus:outline-none focus:border-brandOrange">
+                                    <option value="Up to $820">Apple iPhone (13 / 14 / 15 / 16 Pro)</option>
+                                    <option value="Up to $1,450">Apple MacBook Pro / MacBook Air (M1–M3)</option>
+                                    <option value="Up to $640">Samsung Galaxy S23 / S24 Ultra</option>
+                                    <option value="Up to $580">Apple iPad Pro / iPad Air</option>
+                                    <option value="Up to $380">PlayStation 5 / Xbox Series X / AirPods Max</option>
+                                </select>
+                                <button onclick="redirectToMaxBounty()" class="w-full bg-white text-brandDark hover:bg-slate-100 font-bold text-xs sm:text-sm py-2.5 rounded-xl transition flex items-center justify-center gap-1.5 cursor-pointer">
+                                    <span>Check Exact Model Value</span>
+                                    <span>&rarr;</span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 3-Step "How It Works" Section -->
+    <section class="py-16 sm:py-24 bg-white border-y border-slate-200/80">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14 sm:mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-brandPurple">Seamless 3-Step Trade-In</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-brandDark mt-2">
+                    How It Works in 3 Simple Steps
+                </h2>
+                <p class="text-sm sm:text-base text-slate-600 mt-3">
+                    No haggling with strangers or sketchy meetups. Get a guaranteed quote from home.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200/90 card-hover">
+                    <div class="w-12 h-12 rounded-2xl bg-brandPurple text-white font-extrabold flex items-center justify-center text-lg mb-6 shadow-md">1</div>
+                    <h3 class="text-xl font-bold text-brandDark mb-3">Select Your Device</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Choose your smartphone, laptop, tablet, or console model and answer a few quick questions about its condition to see your instant cash offer.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200/90 card-hover">
+                    <div class="w-12 h-12 rounded-2xl bg-brandPurple text-white font-extrabold flex items-center justify-center text-lg mb-6 shadow-md">2</div>
+                    <h3 class="text-xl font-bold text-brandDark mb-3">Ship It For Free</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Print your complimentary prepaid shipping label or request a free shipping kit. Drop it off safely with full tracking included at zero cost.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200/90 card-hover">
+                    <div class="w-12 h-12 rounded-2xl bg-brandOrange text-white font-extrabold flex items-center justify-center text-lg mb-6 shadow-md">3</div>
+                    <h3 class="text-xl font-bold text-brandDark mb-3">Get Paid Fast</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Once our technicians inspect your gadget and perform a certified data wipe, your payout is sent quickly via PayPal, Zelle, Venmo, or Check.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Dark CTA Banner -->
+    <section class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-brandDark text-white relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center space-y-6 relative z-10">
+            <span class="inline-block px-4 py-1.5 rounded-full bg-white/10 text-brandOrange text-xs font-bold uppercase tracking-widest">
+                Ready to Declutter &amp; Earn?
+            </span>
+            <h2 class="text-3xl sm:text-5xl font-extrabold leading-tight">
+                Check Your Device Value Today
+            </h2>
+            <p class="text-slate-300 text-base sm:text-lg max-w-xl mx-auto leading-relaxed">
+                Lock in your quote for 15 days with free shipping and certified data erasure on every order.
+            </p>
+            <div class="pt-4">
+                <button onclick="redirectToMaxBounty()" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-brandOrange hover:bg-orange-600 text-white font-bold text-base sm:text-lg px-9 py-4 rounded-xl transition-all duration-200 shadow-xl btn-glow cursor-pointer">
+                    <span>Start Valuation Now</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </button>
+            </div>
+            <p class="text-xs text-slate-400 pt-2">
+                No obligation &bull; Free return shipping if you change your mind
+            </p>
+        </div>
+    </section>
+
+    <!-- 6. Meta-Compliant Footer -->
+    <footer class="bg-slate-100 border-t border-slate-200 text-slate-600 text-xs py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto space-y-6">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-slate-300/80 pb-6">
+                <div class="font-extrabold text-sm text-brandDark">
+                    Gizmogo Independent Portal <span class="font-normal text-slate-500">| Official Trade-In Guide</span>
+                </div>
+                <div class="flex flex-wrap items-center justify-center gap-6 font-semibold text-brandDark">
+                    <button onclick="openModal('privacy')" class="hover:text-brandPurple underline-offset-4 hover:underline">Privacy Policy</button>
+                    <button onclick="openModal('terms')" class="hover:text-brandPurple underline-offset-4 hover:underline">Terms &amp; Conditions</button>
+                    <button onclick="openModal('disclosure')" class="hover:text-brandPurple underline-offset-4 hover:underline">Affiliate Disclosure</button>
+                </div>
+            </div>
+
+            <div class="space-y-2 text-[11px] leading-relaxed text-slate-500 text-center sm:text-left">
+                <p>
+                    <strong>Advertising &amp; Affiliate Disclosure:</strong> This webpage operates as an independent promotional resource and trade-in guide. When you click outbound links and complete a qualifying device trade-in or account registration on the official Gizmogo website, we may receive a referral commission at zero additional cost to you.
+                </p>
+                <p>
+                    <strong>Platform Disclaimer:</strong> This site is not a part of Meta Platforms, Inc. or Meta&trade;, nor is it endorsed by Meta&trade; in any way. All product names, logos, and brands are property of their respective owners.
+                </p>
+                <p class="pt-2 text-slate-400">&copy; 2026 Tech Trade-In Guides. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Legal Policy Modal -->
+    <div id="policyModal" class="fixed inset-0 bg-black/60 backdrop-blur-xs hidden items-center justify-center p-4 z-50">
+        <div class="bg-white border border-slate-200 rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+                <h3 id="modalTitle" class="font-bold text-lg text-brandDark">Policy</h3>
+                <button onclick="closeModal()" class="text-slate-400 hover:text-brandDark font-bold text-xl p-1">&times;</button>
+            </div>
+            <div id="modalBody" class="text-xs sm:text-sm text-slate-600 leading-relaxed space-y-3 max-h-80 overflow-y-auto"></div>
+            <div class="pt-2 text-right">
+                <button onclick="closeModal()" class="bg-brandDark text-white text-xs font-semibold px-5 py-2.5 rounded-lg hover:bg-slate-800">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Interactive Quick-Quote Device Selector logic
+        function updateEstimate() {
+            const selector = document.getElementById('deviceSelector');
+            document.getElementById('estAmount').innerText = selector.value;
+        }
+
+        function selectDevice(label, estimate) {
+            document.getElementById('estAmount').innerText = estimate;
+            const selector = document.getElementById('deviceSelector');
+            for (let i = 0; i < selector.options.length; i++) {
+                if (selector.options[i].value === estimate) {
+                    selector.selectedIndex = i;
+                    break;
+                }
+            }
+        }
+
+        // ==========================================
+        // MAXBOUNTY AFFILIATE LINK & META PIXEL TRACKING
+        // ==========================================
+        function redirectToMaxBounty() {
+            // 1. Fire Meta Pixel Conversion Event
+            if (typeof fbq === 'function') {
+                fbq('track', 'InitiateCheckout');
+            }
+
+            // 2. Your MaxBounty Tracking Link
+            const maxBountyUrl = "https://afflat3b3.com/trk/lnk/0AFE7501-4657-4F5B-A460-296C71F5E694/?o=30260&c=918277&a=799862&k=884F8AA0258331AAFCB853A4A5CE8902&l=34477";
+
+            // 3. Small delay to ensure pixel fires before redirecting
+            setTimeout(function() {
+                window.location.href = maxBountyUrl;
+            }, 150);
+        }
+
+        // Meta-Compliant Legal Modals
+        const policyContent = {
+            privacy: {
+                title: "Privacy Policy",
+                body: "<p>We respect your privacy. This promotional landing page does not store or sell personal data directly. Anonymous analytics may be utilized to measure page engagement and ad performance.</p><p>When you proceed to the official Gizmogo platform, your trade-in details are protected under their official Privacy Policy.</p>"
+            },
+            terms: {
+                title: "Terms & Conditions",
+                body: "<p>Estimated payout ranges shown on this guide are illustrative maximum values based on device model and condition. Final cash offers are confirmed directly on Gizmogo's official valuation portal upon inspection.</p>"
+            },
+            disclosure: {
+                title: "Affiliate & Advertising Disclosure",
+                body: "<p>This website operates as an independent marketing partner for Gizmogo. We may earn a referral fee when users register or complete a qualifying trade-in via our partner links, at no cost to the user.</p>"
+            }
+        };
+
+        function openModal(type) {
+            document.getElementById('modalTitle').innerText = policyContent[type].title;
+            document.getElementById('modalBody').innerHTML = policyContent[type].body;
+            const modal = document.getElementById('policyModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('policyModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+    </script>
+</body>
+</html>
